@@ -69,6 +69,7 @@ The main analysis pipeline is available in `ABCD_analysis.ipynb`. To use:
    target_options = "depress_D_p"  # Target variable
    split = "within_categories"  # Analysis approach
    ```
+   More guides on the params, [here](https://github.com/clarkmit/DepPre/blob/main/parameters_guide.md)
 3. Run the analysis pipeline
 
 ## Data Format
