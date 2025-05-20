@@ -78,13 +78,6 @@ Required data structure:
 - Features organized by categories (cognitive, behavioral, neuroimaging, etc.)
 - Target variables for depression and related outcomes
 
-## Citation
-
-If you use this code in your research, please cite:
-
-```bibtex
-[PAPER CITATION]
-```
 
 ## License
 
