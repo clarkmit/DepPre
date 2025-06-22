@@ -1,17 +1,15 @@
-# ABCD Study Machine Learning Analysis Framework
+# Longitudinal ABCD Ensemble Stacking Machine Learning Analysis Framework
 
-This repository contains the code implementation for analyzing the Adolescent Brain Cognitive Development (ABCD) study data using advanced machine learning techniques.
-
-Link for colab, [here](https://colab.research.google.com/drive/1lhAUNdN560OZEO--pxPPmu9PZG9NXlEt?usp=sharing)
+This repository contains the code implementation for analyzing the Adolescent Brain Cognitive Development (ABCD) study data using advanced machine learning techniques across available timepoints.
 
 ## Overview
 
 This framework provides comprehensive tools for:
-- Predictive modeling of depression and related outcomes in adolescents
-- Analysis of longitudinal data across multiple timepoints (T0-T4)
-- Feature importance and interaction analysis
+- Predictive modeling of depression and other hallmark psychiatric dimensions and categories in adolescents and adults
+- Analysis of longitudinal data across multiple timepoints (T0-T4) with categorized feature-sets with available variables from each acqusition point
 - Ensemble learning with multiple model architectures
-- Extensive visualization and evaluation capabilities
+- Feature importance for meta-models, individual ML models, and interaction analysis
+- Extensive visualization and model evaluation capabilities
 
 ## Key Features
 
