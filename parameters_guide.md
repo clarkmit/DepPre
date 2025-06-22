@@ -7,10 +7,6 @@
 - **Purpose**: Selects the ABCD study timepoint for analysis
 - **Details**:
   - T0: Baseline
-  - T1: 6-month follow-up
-  - T2: 1-year follow-up
-  - T3: 18-month follow-up
-  - T4: 2-year follow-up
 
 ### Group Selection (`group`)
 - **Values**: "high_ale", "high_ale_severe_p_mh", "low_ale", "Female", "Male", "None"
@@ -25,22 +21,20 @@
 ### Target Variable (`target_options`)
 Key outcome variables including:
 - **Depression Measures**:
-  - "depress_D_p": Parent-reported depression
+  - "depress_D_p": Parent-reported depression of adoloscents
   - "depress_D_p_rev": Revised parent-reported depression
   - "dep_onset_rci_1.96"/"2.3": Depression onset with different RCI thresholds
   - "dep_remission_rci_1.96"/"2.3": Depression remission
-  - "latent_class_depression": Latent class depression categorization
 
 - **Cognitive Measures**:
-  - "tb_fluid": Fluid intelligence
-  - "tb_cryst": Crystallized intelligence
+  - "tb_flanker": Experimental measure of cognitive control 
   - "tb_reading": Reading ability
 
 ### Analysis Split (`split`)
 - **Values**: "across_categories", "within_categories"
 - **Purpose**: Determines how features are grouped for analysis
   - across_categories: Analyzes all features together
-  - within_categories: Analyzes features within their respective domains (e.g., cognitive, behavioral)
+  - within_categories: Analyzes features within their respective domains (e.g., cognitive task parameters, neuroimaging, specific forms of psychopathology, etc)
 
 ## Advanced Parameters
 
@@ -102,26 +96,18 @@ imputer = "mice"
 selection_method = "interaction"
 ```
 
-### Longitudinal Depression Trajectory
-```python
-tp_option = '4'
-group = "high_ale"
-target_options = "latent_class_depression"
-split = "within_categories"
-conformal_prediction = True
-```
 
 ## Parameter Selection Guidelines
 
 1. **Time Point Selection**:
-   - Use T0 for baseline predictions
+   - Use T0 for baseline predictions (9 years of age in children)
    - Use later timepoints for trajectory analysis
-   - Consider T2 for stable outcomes
+   - Consider T2 for largest availability of diverse biopsychosocial variable types
 
 2. **Group Selection**:
    - Use "None" for population-level insights
    - Use specific groups for targeted analysis
-   - Consider "high_ale" for vulnerability analysis
+   - Consider "high_ale" for specific analysis in adoloscents with adverse life even history  
 
 3. **Target Selection**:
    - Match to research question
@@ -129,14 +115,10 @@ conformal_prediction = True
    - Check for outcome reliability
 
 4. **Analysis Approach**:
-   - Use "within_categories" for domain-specific insights
-   - Use "across_categories" for comprehensive prediction
+   - Use "within_categories" for domain-specific insights using categorically arranged feature-sets
+   - Use "across_categories" for comprehensive prediction across all categories
    - Consider computational resources
 
-5. **Feature Selection**:
-   - Use 'interaction' for complex relationships
-   - Use 'rfecv' for dimension reduction
-   - Use 'h-stats' for hierarchical relationships
 
 ## Notes
 - Parameter combinations should align with research questions
