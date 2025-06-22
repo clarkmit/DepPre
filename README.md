@@ -53,10 +53,13 @@ This framework provides comprehensive tools for:
   - Spider plots for cross-category comparison
  
 - **Additional Modelling Support**:
+  - Built in pre-processing functions and imputation capabilities
+  - Available variables organized for each available time point of data acqusition
   - Cross-Validation using K-Folds to prevent overfitting and provide nested validation
   - Handles mixed data types (continuous, categorical, ordinal)
   - Variables organized around missing data which were collected and assesed at different time points
-  - Further feature-sets organized across a spectrum of objective to subjective assessments for additional predictive comparisons 
+  - Advanced interaction assesment, including option to specify domain-specific categories for analysis
+  - Additionally organized feature-sets arranged across a spectrum of objective to subjective measurements
 
 ## Requirements
 
