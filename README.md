@@ -28,7 +28,7 @@ This framework provides comprehensive tools for:
   - GAM (Generalized Additive Models) - Optional
   - Quantile analysis - Optional
 
-- **Visualization Suite**:
+- **Visualization Options**:
   - Feature importance plots
   - Interaction matrices
   - SHAP summary plots
