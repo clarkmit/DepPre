@@ -2,28 +2,27 @@
 This repository contains the code implementation for analyzing the Adolescent Brain Cognitive Development (ABCD) study data using a variety of advanced machine learning methods for predictive analysis using a vast high-dimensional variety of biopsychosocial variable types, and includes organized feature-engineering for all available timepoints of data acqusition.
 
 ## Central Project Aim
-Address the fundamental question: Which of the vast range of currently available biopsychosocial measurements best predict hallmark psychiatric outcomes, and how do they compare hierarchically?
+Address the fundamental question: Which of a vast range of currently available biopsychosocial measurements best predict hallmark psychiatric outcomes? Feature-sets are organized both within and across an ontology of theory-driven, commonly used, or potentially informative categories (upon a rough biopsychosocial gradient) to assess both hierarchical and interactive predictive power.
 
 ## Organizational Procedures
-Organized variables (including computational generation of novel variables) into ontologically useful categories and feature-sets for subsequent advanced predictive modelling using available and theoretically relevant data arranged for each unique time point.
-Feature-set categories included over 1,000 unique Biological, Psychological, Social, and Environmental measurements across 5 available time points using data from 23,760 children and adults, including (but not limited to):
-Biological: Neuroimaging (4 modalities), ancestral genetic PCs, physiological fitbit data
-Psychological: Experimental cognitive assessments (including hierarchical Bayesian modelling of individual trial-level behavior), personality traits, behavioral features
+Feature-set categories included over 1,000 unique Biological, Psychological, Social, and Environmental measurements across 5 available time points using data from ~23,760 children and adults/parents, including (but not limited to):
+Biological: Neuroimaging (structural, DTI, resting-state, task-fMRI), ancestral genetic PCs, physiological fitbit data
+Psychological: Experimental cognitive assessments (including hierarchical Bayesian modelling of individual trial-level behavior), personality traits, behavioral features, co-extensive individual and familial psychopathological dimensions, etc
 Social: Parenting styles, family dynamics, quality/dynamics of peer relationships, socioeconomic factors
 Environmental: Adverse life events, residential characteristics, cultural factors
 Temporal: Delta calculations were generated for many variables with available time points which were theoretically relevant to psychopathology
 
 ## Predictive Targets:
 Hallmark psychiatric features: depression, anxiety, ADHD, externalizing behaviors
-Contrasting functional outcomes: social problems, cognitive task performance, academic achievement
+Contrasting functional outcomes: social problems, cognitive task performance, academic performance
 Multiple operationalizations: dimensional, categorical, recent onset of clinically relevant symptoms
 
 ## Overview
 This framework provides comprehensive tools for:
 - Predictive and comparitive modeling of hallmark psychiatric dimensions and categories in adolescents and adults
 - Organized longitudinal data across multiple timepoints (T0-T4) with categorized feature-sets using available variables from each acqusition point
-- Ensemble learning with multiple model architectures
-- Feature importance for meta-models, individual ML models, and interaction analysis
+- Multiple High-Performance Model Ensemble learning architecture
+- Outputs of feature importance for meta-models, individual ML models, and interaction analysis
 - Extensive visualization and model evaluation capabilities
 
 ## Key Features in Analytic Pipeline
@@ -58,7 +57,7 @@ This framework provides comprehensive tools for:
   - Cross-Validation using K-Folds to prevent overfitting and provide nested validation
   - Handles mixed data types (continuous, categorical, ordinal)
   - Variables organized around missing data which were collected and assesed at different time points
-  - Advanced interaction assesment, including option to specify domain-specific categories for analysis
+  - Advanced interaction assesment, including additional metrics to adjust for model complexity and options to specify domain-specific categories for analysis
   - Additionally organized feature-sets arranged across a spectrum of objective to subjective measurements
 
 ## Requirements
