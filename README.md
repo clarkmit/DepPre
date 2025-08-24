@@ -3,7 +3,7 @@ This repository contains the code implementation for analyzing the Adolescent Br
 
 Link to colab: https://colab.research.google.com/drive/1lhAUNdN560OZEO--pxPPmu9PZG9NXlEt#scrollTo=f5DW-i1ZWylJ
 
-The colab should be run on a minimum of T4 GPU. If you were to run it locally, please ensure you have >= 10 GB of GPU RAM as the TabPFN model will take up your GPU RAM, and >= 10 GB System RAM for the feature combinations.
+The colab should be run on a minimum of T4 GPU. If you were to run it locally, please ensure you have >= 10 GB of GPU RAM as TabPFN will take up your GPU RAM, and >= 10 GB System RAM for the feature combinations.
 
 ## Central Project Aim
 Address the fundamental question: Which of a vast range of currently available biopsychosocial measurements best predict hallmark psychiatric outcomes? Feature-sets are organized both within and across an ontology of theory-driven, commonly used, or potentially informative categories (upon a rough biopsychosocial gradient) to assess both hierarchical and interactive predictive power.
