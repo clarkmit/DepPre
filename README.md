@@ -135,8 +135,7 @@ Required data structure for full analysis:
 
 
 ## Contributors
-Clark Roberts
-Zhafira Fawnia 
+Clark Roberts, Zhafira Fawnia 
 
 ## Contact
 For questions about the code, please contact authors and note that access to data requires lisence.
